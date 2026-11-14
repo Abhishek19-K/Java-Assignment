@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Feedback App</title>
+</head>
+<body>
+    <h2>Feedback Form</h2>
+    <form action="submitFeedback" method="post">
+        <label>Name:</label>
+        <input type="text" name="name" required><br><br>
+
+        <label>Email:</label>
+        <input type="email" name="email" required><br><br>
+
+        <label>Feedback Type:</label>
+        <select name="feedbackType">
+            <option>Complaint</option>
+            <option>Suggestion</option>
+            <option>Compliment</option>
+        </select><br><br>
+
+        <label>Comments:</label>
+        <textarea name="comments" required></textarea><br><br>
+
+        <button type="submit">Submit Feedback</button>
+    </form>
+</body>
+</html>
